@@ -8,17 +8,25 @@ It includes:
 
 Clone it:
 
-```$ git clone https://github.com/alisio/asterisk-container.git
+```sh
+$ git clone https://github.com/alisio/asterisk-container.git
+```
 
 Build it:
 
-```$ cd asterisk-container
-```$ build -t='asterisk13-centos7' .
+```sh
+$ cd asterisk-container
+$ build -t='asterisk13-centos7' .
+```
 
 Run it:
 
-```# docker run --restart=always --name asterisk01 -d -p 5060-5065:5060-5065/tcp -p 10000-10500/udp asterisk13-centos7
+```sh
+# docker run --restart=always --name asterisk01 -d -p 5060-5065:5060-5065/tcp -p 10000-10500/udp asterisk13-centos7
+```
 
 Connect to it:
 
-```# docker exec -t -i asterisk01 /bin/bash
+```sh
+# docker exec -t -i asterisk01 /bin/bash
+```
