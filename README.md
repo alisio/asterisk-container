@@ -22,7 +22,7 @@ $ docker build -t asterisk-serpro .
 Executar:
 
 ```sh
-$ sudo docker run -d --restart unless-stopped --name asterisk01 --network host asterisk-serpro
+$ sudo docker run -d --restart unless-stopped --name asterisk01 --network host asterisk-container
 ```
 
 Conectar:
