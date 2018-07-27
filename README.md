@@ -16,7 +16,7 @@ Criar imagem:
 
 ```sh
 $ cd asterisk-container
-$ docker build -t asterisk-serpro .
+$ docker build -t asterisk-container .
 ```
 
 Executar:
