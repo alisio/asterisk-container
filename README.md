@@ -1,5 +1,4 @@
 # asterisk-container
-Container docker para asterisk
 Docker file para criar container com asterisk 13 baseado na imagem do Centos 7. Os pacotes são instalados a partir do repositório Tucny.com
 
 Módulos incluídos:
