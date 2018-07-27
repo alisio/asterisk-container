@@ -9,7 +9,7 @@ Módulos incluídos:
 Clonar:
 
 ```sh
-$ git clone https://git.serpro/81817002368/asterisk-container.git
+$ git clone https://github.com/alisio/asterisk-container.git
 ```
 
 Criar imagem:
