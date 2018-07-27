@@ -1,32 +1,32 @@
 # asterisk-container
-Asterisk 13 docker container
-Docker file to create as asterisk 13, Centos 7 Image. The asterisk is installed from the packages made available by Tucny.com
+Container docker para asterisk
+Docker file para criar container com asterisk 13 baseado na imagem do Centos 7. Os pacotes são instalados a partir do repositório Tucny.com
 
-It includes:
+Módulos incluídos:
 * Asterisk 13
-* Sip channel driver enabled
+* Módulo chan_sip
 
-Clone it:
+Clonar:
 
 ```sh
-$ git clone https://github.com/alisio/asterisk-container.git
+$ git clone https://git.serpro/81817002368/asterisk-container.git
 ```
 
-Build it:
+Criar imagem:
 
 ```sh
 $ cd asterisk-container
-$ build -t='asterisk13-centos7' .
+$ docker build -t asterisk-serpro .
 ```
 
-Run it:
+Executar:
 
 ```sh
-# docker run --restart=always --name asterisk01 -d -p 5060-5065:5060-5065/tcp -p 10000-10500/udp asterisk13-centos7
+$ sudo docker run -d --restart unless-stopped --name asterisk01 --network host asterisk-serpro
 ```
 
-Connect to it:
+Conectar:
 
 ```sh
-# docker exec -t -i asterisk01 /bin/bash
+$ sudo docker exec -t -i asterisk01 /bin/bash
 ```
