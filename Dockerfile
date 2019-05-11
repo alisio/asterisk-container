@@ -11,6 +11,7 @@ RUN   yum -y --nogpgcheck install \
         asterisk-oss \
         asterisk-sip \
         asterisk-sounds-core-en-alaw \
+        augeas \
         mlocate \
         net-tools \
         ngrep \
