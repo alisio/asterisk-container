@@ -29,3 +29,10 @@ Conectar:
 ```sh
 $ sudo docker exec -t -i asterisk01 /bin/bash
 ```
+
+Usar:
+Contexto padrao: 'padrao'
+Ramais criados durante a instalacao:
+* 1000
+* 2000
+Obs. : A senha é numero do ramal

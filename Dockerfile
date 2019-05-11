@@ -10,16 +10,20 @@ RUN   yum -y --nogpgcheck install \
         asterisk \
         asterisk-oss \
         asterisk-sip \
+        asterisk-sounds-core-en-alaw \
+        mlocate \
         net-tools \
         ngrep \
         rsync \
         sngrep \
         wget \
         vim
+#COPY  ./files/etc/asterisk/sip.conf /etc/asterisk/sip.conf
+COPY  ./files/etc/asterisk/ /etc/asterisk/
 VOLUME  /etc/asterisk
 EXPOSE  5038/tcp
 EXPOSE  5060/udp
 EXPOSE  8088/tcp
-EXPOSE  10000-20000/udp
+EXPOSE  10000-10100/udp
 WORKDIR /etc/asterisk
 ENTRYPOINT  ["/usr/sbin/asterisk", "-vvvvvvv"]
