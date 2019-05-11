@@ -35,4 +35,5 @@ Contexto padrao: 'padrao'
 Ramais criados durante a instalacao:
 * 1000
 * 2000
+
 Obs. : A senha é numero do ramal
